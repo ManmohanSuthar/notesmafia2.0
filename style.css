@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(beauty11.jpeg);
+    
+   }
+.main{
+
+}
+img {
+    width: 100%;
+}
+header {
+    position: sticky;
+    /* background: #1a639a; */
+    top: 0;
+    bottom: 5px;
+    box-shadow: 0 0 50px 0 black;
+    z-index: 10;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 0 0 20px 20px ;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+header .header-left {
+    width: 100%;
+    /* border: 2px solid yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    
+}
+header .header-left .logo {
+    /* border: 2px solid blue; */
+    width: 180px;
+    padding-right: 10px;
+}
+header .header-left nav {
+    margin-left: 50px;
+}
+header .header-left nav ul {
+    display: flex;
+}
+nav ul li a {
+    display: block;
+    color: #0b2239;
+    font-size: 23px;
+    padding: 5px 10px;
+    transition: 0.2s;
+    margin:0 10px;
+    border-radius: 5px;
+}
+nav ul li {
+    margin: 0 5px;
+    transition: all .3s ease-in-out .1s;
+    border-bottom: 2px solid transparent;
+    border-radius: 10px;
+}
+.logo a img {
+    margin: 0 5px;
+    transition: all .3s ease-in-out .1s;
+}
+nav ul li a{
+    transition: all 0.2s ease-in;
+}
+/* nav ul li a:hover{
+    color: #fff;
+} */
+.logo a img:hover{
+    transform: scale(1.1);
+}
+nav ul li:hover{
+    border-bottom: 2px solid #D2C7AD;
+    transition: .4s;
+}
+
+
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+
+header .header-right .hamburger {
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+header .header-right .hamburger div {
+    width: 30px;
+    height: 5px;
+    margin: 7px 0;
+    background: #fff;
+}
+
+.wlmDiv{
+    z-index: 99;
+    margin-top: 35px;
+    width: 100%; height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #37385C;
+    backdrop-filter:blue(5px);
+    background-size: cover;
+}
+
+.afterWlm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%; height: 6vh;
+    margin-top: 6px;
+   
+
+}
+#line{
+    color: #37385C;
+    font-weight:normal;
+    font-size: 35px;
+    
+
+}
+
+.text{
+    font-weight: normal;
+    font-size: 30px;
+    border-right: 2px solid white;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+    typing 3s steps(26),
+    cursor .4s step-end infinite alternate;
+}
+@keyframes cursor {
+    50%{border-color: transparent;}
+    
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+   
+    
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.row1 {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.samester {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 30px;
+    width: 420px;
+    height: 180px;
+    text-align: center;
+    /* border: 2px solid rgba(0, 0, 0, 0.852); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: fil;
+    transition: all .3s ease;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.samester:hover{
+   transform: scale(1.01);
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+.samester a{
+    transition: all 0.4s ease;
+    border-radius: 15px;
+    border-bottom: 2px solid transparent;
+}
+
+.samester a:hover {
+    border-bottom: 2px solid #D2C7AD;
+}
+
+.samester a {
+    color: #37385C;
+    border-radius: 3px;
+    font-size: 30px;
+    padding: 5px 10px;
+    font-weight: normal;
+}
+
+.samester p {
+    color: #37385C;
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+footer{
+    width: 100%;
+    bottom: 0;
+    margin-top: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px 20px 0 0;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.divShare h5{
+    font-size: 15px;
+}
+.imgFooter{
+    display: flex;  
+}
+.imgFooter i{
+    font-size: 30px;
+    color: #222;
+    transition: all 0.5s ease;
+}
+.imgFooter i:hover{
+    color: #D2C7AD;
+}
+.imgFooter a{
+    margin: 5px 5px;
+}
+
+.footer a:hover {
+    background: none;
+
+}
+
+.divShare {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 25px;
+    font-weight: normal;
+    margin-right: 20px;
+
+}
+.divShare h5{
+    font-weight: normal;
+}
+#line{
+    font-size: 25px;
+    font-weight: normal;
+        
+}
+
+@media only screen and (max-width: 1000px) {
+    /* body{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("../Images/halfsunmobile.jpg")
+    } */
+    .main_header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        overflow: hidden;
+    }
+    .hamburger{
+        padding-right: 70px;
+    }
+    nav ul li a {
+        display: none;
+        font-size: 23px;
+        padding: 5px 10px;
+        transition: 0.2s;
+        margin:10px 10px;
+        border-radius: 5px;
+    }
+    nav ul li:hover{
+    
+        transform: scale(1.1);
+     
+     }
+    nav ul li a:hover{
+        background: #0b2239;
+        transition: .5s;
+        color: #1b9bff;
+    }
+     */
+    header .header-right{
+        padding-right:30px;
+    }
+    header .header-right .hamburger {
+        display: block;
+    }
+    header .header-left{
+        margin-left: 0;
+       
+        
+    }
+    header .header-left nav {
+        margin: 0;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(50px);
+        border-radius: 20px;
+        border:1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        padding: 20px;
+        transition: 0.5s;
+        text-align: center;
+        z-index: 2;
+    }
+    header .header-left nav.active {
+       
+        top: 80px;
+    }
+    header .header-left nav ul {
+        display: block;
+    }
+
+    .wlmDiv{
+        height: 5vh;
+       }
+    #line{
+        font-size: 20px;
+        font-weight: normal;
+    }
+    .text{
+        font-size: 25px;
+        
+        font-weight: normal;
+    }
+    
+ .samester {
+     
+    
+    width: 420px;
+    height: 200px;
+    transition: all .3s ease-in-out .1s;
+    
+
+}
+.samester:hover{
+    
+    transform: scale(1.1);
+ 
+ }
+.samester a {
+   
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.samester p {
+    margin-top: 10px;
+    font-size: 17px;
+    padding: 5px;
+
+}
+}
+
+ @media (max-width:400px)
+{
+   .wlmDiv{
+    height: 5vh;
+   }
+    .text{
+        font-size: 25px;
+        font-weight: normal;
+        
+    }
+    .afterWlm{
+        margin-top: 5px;
+    }
+    #line{
+        
+        font-size: 15px;
+        font-weight: normal;
+        padding: 10px;
+
+    }
+    
+    .samester {
+        width: 320px;
+        height: 150px;
+    
+    transition: all .3s ease-in-out .1s;
+        }
+.samester:hover{
+    
+    transform: scale(1.1);
+ 
+ }
+    .samester a {
+       
+        font-size: 25px;
+        font-weight: normal;
+    }
+    
+    .samester p {
+        margin-top: 10px;
+        font-size: 17px;
+        padding: 5px;
+    
+    }
+    .divShare
+    {
+        margin-right: 3px;
+    }
+    .footer a{
+        
+        margin-right: px;
+    }
+    .share{
+        
+        font-size: 15px;
+    }
+}
+
+@media (max-width:300px)
+{
+    .samester {
+        width: 320px;
+        height: 100px;
+    
+    transition: all .3s ease-in-out .1s;
+    }
+.samester:hover{
+    
+    transform: scale(1.1);
+ 
+ }
+    .samester a {
+       
+        font-size: 16px;
+        font-weight: normal;
+    }
+    
+    .samester p {
+        margin-top: 10px;
+        font-size: 13px;
+        padding: 5px;
+    
+    }
+    
+    .share{
+        
+        font-size: 13px;
+    }
+    .divShare{
+        margin-right: 5px;
+    }
+    .imgFooter img{
+        width: 40px;
+        
+    }
+    .imgFooter a{
+        margin-right: 1px;
+    }
+    .text{
+        font-size: 15px;
+    }
+}
+
+   
